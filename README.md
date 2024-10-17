@@ -100,10 +100,15 @@ Access the Application Once the container is running, you can access the React a
 Dockerfile Explanation The provided Dockerfile includes the following instructions:
 
 FROM node:18-alpine: This line sets the base image to the lightweight Node.js version (18-alpine). 
+
 WORKDIR /app: This command creates and sets the working directory in the container to /app. 
+
 COPY . .: This command copies all files from the current directory on the host to the working directory in the container. 
+
 RUN npm install: This command installs the necessary dependencies for the React application. 
+
 EXPOSE 3000: This command informs Docker that the container listens on port 3000 at runtime. 
+
 CMD ["npm", "start"]: This command specifies the command to run the application when the container starts.
 
 Additional Notes If you need to rebuild the image after making changes, you can use the same docker build command as above.
