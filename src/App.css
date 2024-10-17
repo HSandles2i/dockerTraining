@@ -1,0 +1,37 @@
+.App {
+  display: flex;
+  align-items: center;
+  align-content: center;
+  justify-content: space-around;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: rgb(0, 45, 53);
+  width: 100%;
+  height: 100%;
+}
+.bin {
+  width: 2rem;
+  height: 2rem;
+  margin: auto;
+  background-color: gray;
+  border-radius: 0.2rem;
+}
+.on {
+  background: linear-gradient(to right ,white, 50%, rgb(177, 144, 107)) !important;
+  outline: 3px rgb(194, 194, 194) solid;
+}
+.off{
+  background-color: black;
+  outline: 3px rgb(24, 24, 24) solid;
+}
+
+#bin-array {
+  width: 80vw;
+  max-width: 1000px;
+  min-width: 400px;
+  height: 20vw;
+  display: flex;
+  flex-direction: row;
+  margin: auto;
+}
